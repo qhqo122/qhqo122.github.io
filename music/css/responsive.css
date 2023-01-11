@@ -1,0 +1,416 @@
+/*
+가장중요한 조건
+가로스롤은 절대 생기면 안된다.
+가로스크롤이 생기는이유는
+- 위드가 살이있는영역 ex)1200 1000px
+- absolute ->부모한테 무조건 overflow hidden을 줘야됨
+모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+/* 실콘텐츠 + 100 */
+/* 1300 */
+
+@media screen and (max-width: 1300px) {
+  /* Main_vis */
+  .main_vis .text-wrap {
+    width: 70%;
+  } 
+}
+
+/*
+테블릿
+중대적인 레이아웃 변화
+폰트사이즈 줄여준다 아래와같은룰로
+  */
+@media screen and (max-width: 1024px) {
+  /* Main_vis */
+  .main_vis .text-wrap {
+    width: 70%;
+  }
+
+  .main_vis .text-wrap p {
+    padding: 0 60px;
+  }
+
+  /* Blog */
+  .blog ul li {
+    width: 50%;
+  }
+
+  /* Footer */
+  footer .menu-wrap .category {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .blog ul li .text-wrap .title {
+    font-size: 16px;
+  }
+
+  footer .menu-wrap .about {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 952px) {
+  /* Charts */
+  .charts .popular-area,
+  .charts .recom-area {
+    float: none;
+    width: 100%;
+  }
+
+  .charts ul li {
+    padding-left: 30px;
+  }
+
+  .charts ul li .left-area .num {
+    left: 5px;
+  }
+
+  .charts ul li .right-area {
+    width: calc(100% - 120px);
+    height: 120px;
+  }
+
+  .charts li .info-wrap .time{margin-right: 5px;}
+  .charts li .info-wrap .btn-share{margin-right: 3px;}
+
+  /* Cate */
+  .cate .title {
+    font-size: 25px;
+  }
+
+  .cate ul li {
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/*
+모바일
+   *대대적 레이아웃 변화
+사이드 패딩 15~20
+대폰트 font-size: 38~28
+중폰트 18~28
+소폰트 12~ 16
+웬만한 레이아웃은 1줄 아니면 2줄
+  */
+@media screen and (max-width: 768px) {
+  /* Header */
+  header {
+    width: 100%;
+    height: 60px;
+    overflow: visible;
+    background: #222;
+  }
+
+  .mCustomScrollBox {
+    overflow: initial;
+  }
+
+  #mCSB_2_container {
+    width: 100%;
+  }
+  
+  .mCSB_container{
+    overflow: initial;
+  }
+  #mCSB_1_container {
+    overflow: initial;
+  }
+
+  .on header {
+    background: #f9f9f9;
+  }
+
+  header .logo {
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    float: none;
+    width: 120px;
+    height: 20px;
+    z-index: 1;
+  }
+
+  body.on header .logo {
+    background: url(../images/w_logo.svg) no-repeat;
+    background-size: 100%;
+}
+
+  header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  header .trigger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 30px;
+    height: 20px;
+    z-index: 1;
+  }
+
+  header .trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    transition: 0.5s;
+  }
+
+  .on header .trigger span {
+    background: #222;
+  }
+
+  header .trigger span:nth-child(1) {
+    top: 0;
+  }
+
+  header .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+
+  header .trigger span:nth-child(3) {
+    top: 100%;
+  }
+
+  header .trigger.on span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  header .trigger.on span:nth-child(2) {
+    opacity: 0;
+  }
+
+  header .trigger.on span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  header nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    padding: 70px 20px 0 20px;
+    transition: 0.3s;
+    overflow: auto;
+  }
+
+  header nav.on {
+    left: 0;
+    background-color: var(--th_color01);
+  }
+
+  header ul li::before {
+    left: -18px;
+  }
+
+  .wrap {
+    margin-left: 0;
+  }
+
+  /* Main */
+  main {
+    padding-top: 60px;
+    padding-left: 0;
+  }
+
+  main .main_vis {
+    background: url(../images/mobile_main_vis.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+
+  .on main .main_vis {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .main_vis .text-wrap {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(0);
+    padding: 0 10px;
+    text-align: left;
+    width: 100%;
+  }
+
+  .main_vis .text-wrap .welcome-txt {
+    font-size: 35px;
+  }
+
+  .main_vis .text-wrap p {
+    padding: 0;
+    font-size: 15px;
+    color: #f9f9f9;
+    text-align-last: left;
+  }
+
+  .main_vis .text-wrap .btn-more {
+    display: none;
+  }
+
+  /* Recomm */
+  .recomm {
+    padding: 20px 0;
+  }
+
+  .recomm .recomm-header .title {
+    font-size: 27px;
+  }
+
+  .recomm .recomm-header .main-btn-more {
+    margin-top: 30px;
+  }
+
+  /* Charts */
+  .charts .sub-title {
+    font-size: 25px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .charts .popular-area,
+  .charts .recom-area {
+    float: none;
+    width: 100%;
+  }
+
+  .charts ul li {
+    padding-left: 30px;
+  }
+
+  .charts ul li .left-area .num {
+    left: 5px;
+  }
+
+  .charts ul li .right-area {
+    width: calc(100% - 120px);
+    height: 120px;
+  }
+
+  .charts li .info-wrap .time{margin-right: 5px;}
+  .charts li .info-wrap .btn-share{margin-right: 3px;}
+
+  /* Cate */
+  .cate .title {
+    font-size: 25px;
+  }
+
+  .cate ul li {
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  /* Music */
+  .music .title {font-size: 38px;}
+
+  .music .cate-title {font-size: 20px;}
+
+  .music .music-slide .swiper-slide .text-wrap .song {
+    font-size: 14px;
+  }
+
+  .music .music-slide .swiper-slide .text-wrap .singer {
+    font-size: 12px;
+  }
+
+  .music .main-btn-more {
+    font-size: 13px;
+    padding: 7px 16px 7px 10px;
+  }
+
+  /* News */
+  .news .news-header .sub-info {
+    display: none;
+    float: right;
+}
+
+.news .news-slide .swiper-slide .text-wrap .news-heading {font-size: 14px; line-height: 18px;}
+
+/* Blog */
+.blog ul li {
+  float: none;
+  width: 100%;
+  margin-right: 0;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog ul li .text-wrap .date {font-size: 10px;}
+
+.blog ul li .text-wrap .title {font-size: 18px; line-height: 23px;}
+
+.blog ul li .text-wrap .desc {font-size: 13px;}
+
+.blog .btn-load-more {
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Footer */
+footer {padding: 20px;}
+
+footer .menu-wrap {
+  float: none;
+  width: 100%;
+  overflow: hidden;
+}
+
+footer .menu-wrap .category {
+  float: left;
+  width: 50%;
+  margin-right: 0;
+}
+
+footer .menu-wrap .about {
+  float: right;
+  width: 50%;
+}
+
+footer .menu-wrap .title {font-size: 15px;}
+
+footer .menu-wrap ul li {font-size: 13px;}
+
+footer .newsletter-wrap {
+  float: none;
+  width: 100%;
+}
+
+footer .newsletter-wrap .title {font-size: 15px;}
+
+footer .newsletter-wrap .desc {font-size: 14px; line-height: 20px;}
+
+footer .newsletter-wrap .btn-submit {font-size: 13px;}
+
+footer .newsletter-wrap .check {overflow: hidden;}
+
+footer .newsletter-wrap .check input[type=checkbox] {float: left;}
+
+footer .newsletter-wrap .check label {font-size: 14px; float: right; margin-left: 0; width: 90%; line-height: 18px;}
+}
+
+.theme-btn {
+  bottom: 15px;
+  right: 10px;
+}

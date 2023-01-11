@@ -1,0 +1,305 @@
+:root {
+    --red: #ff0039;
+    --th_color01: #15161a;
+    --th_color02: #f9f9f9;
+}
+
+body.on {
+    --red: #ff0039;
+    --th_color01: #fff;;
+    --th_color02: #15161a;
+}
+
+body {
+    background: var(--th_color01);
+    color: var(--th_color02);
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    overflow: auto;
+    height: 100vh;
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 245px;
+    height: 100vh;
+    overflow: auto;
+    z-index: 199;
+    backdrop-filter: blur(12px);
+    background: rgb(21 22 26 / 60%);
+    border-right: 1px solid #212226;
+}
+.on header{
+    background:rgb(255 255 255 / 54%);
+    border-right: 1px solid #cfcfcf;
+}
+
+header .logo {
+    margin: 30px 0;
+    width: 153px;
+    height: 28px;
+    background: url(../images/logo.svg) no-repeat;
+    background-size: 100%;
+}
+
+body.on header .logo {
+    background: url(../images/w_logo.svg) no-repeat;
+}
+
+header .logo a {
+    display: block;
+    height: 100%;
+}
+
+header .trigger {
+    display: none;
+}
+
+header .title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+header ul {
+    margin-bottom: 30px;
+}
+
+header ul li {
+    line-height: 20px;
+    color: #ccc;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.on header ul li {
+    color: #333;
+}
+
+header ul li.on {
+    color: #bc0c31;
+}
+
+header ul li.on::before {
+    background-color: #bc0c31;
+}
+
+header ul li a i {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+header ul li a {
+    display: block;
+    padding: 8px 0;
+}
+
+header .playlists {
+    margin-top: 50px;
+}
+
+header .playlists .btn-make {
+    width: 215px;
+    height: 35px;
+    border-radius: 30px;
+    border: none;
+    background-color: #ff0039;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+header .playlists .btn-make:hover {
+    background-color: #222;
+}
+
+/* Footer */
+footer {
+    padding: 20px 40px 20px 280px;
+    overflow: hidden;
+    background: #131317;
+}
+
+footer .menu-wrap {
+    float: left;
+    width: 50%;
+}
+
+footer .menu-wrap .category {
+    float: left;
+    margin-right: 200px;
+}
+
+footer .menu-wrap .title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.on footer .menu-wrap .title {
+    color: var(--th_color01);
+}
+
+footer .menu-wrap ul li {
+    line-height: 40px;
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.on footer .menu-wrap ul li {
+    color: var(--th_color01);
+}
+
+footer .menu-wrap ul li:hover {
+    text-decoration: underline;
+}
+
+footer .menu-wrap .about {
+    float: left;
+}
+
+footer .newsletter-wrap {
+    float: right;
+    width: 50%;
+}
+
+footer .newsletter-wrap .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+footer .newsletter-wrap .desc {
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+footer .newsletter-wrap .submit {
+    overflow: hidden;
+}
+
+footer .newsletter-wrap input[type=text] {
+    border: none;
+    border-radius: 20px;
+    width: calc(70% - 15px);
+    padding: 7px 15px;
+    background: #34383e;
+    color: #fff;
+    outline: none;
+    float: left;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+footer .newsletter-wrap input[type=text]::placeholder {transition: 0.4s; text-align: center;}
+
+footer .newsletter-wrap input[type=text]:focus::placeholder {
+    opacity: 0;
+    visibility: none;
+}
+
+footer .newsletter-wrap .btn-submit {
+    float: left;
+    background: #ff0039;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 7px 0;
+}
+
+footer .newsletter-wrap .btn-submit:hover {
+    background-color: #222;
+}
+
+footer .newsletter-wrap .check {
+    position: relative;
+    margin-top: 15px;
+}
+
+footer .newsletter-wrap .check input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 숨킬라고 적용 */
+    visibility: hidden;
+}
+
+
+footer .newsletter-wrap .check label {
+    margin-left: 15px;
+    color: #bbb;
+    padding-left: 20px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+footer .newsletter-wrap .check label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: #bbbbb5bc;
+}
+
+footer .newsletter-wrap .check label.on::before {
+    background: url(../images/checkon.svg) no-repeat;
+    background-position: 0 0;
+    border: 0;
+    background-size: 15px;
+}
+
+.theme-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 136px;
+    height: 53px;
+    line-height: 50px;
+    border-radius: 50px;
+    text-align: center;
+    color: #000;
+    z-index: 20;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 14px;
+    background: #fff;
+}
+
+.on .theme-btn {
+    background: #15161a;
+    color: #fff;
+}
+
+.theme-btn i {
+    display: inline-block;
+    vertical-align: -2px;
+    margin-right: 5px;
+}
+
+.theme-btn span {
+    font-weight: 500;
+}
+
+.theme-btn:hover {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(12px);
+}
+
+.on .theme-btn:hover {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(12px);
+}

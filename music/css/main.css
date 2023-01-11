@@ -1,0 +1,683 @@
+main {
+    background: var(--th_color01);
+}
+
+/* Main_vis */
+.main_vis {
+    position: relative;
+    background: url(../images/streaming.jpg) no-repeat;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.on .main_vis {
+    background: url(../images/streaming.jpg) no-repeat;
+    background-size: cover;
+}
+
+.main_vis .text-wrap {
+    position: absolute;
+    top: 50%;
+    left: calc((50% + 120px));
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align: center;
+}
+
+.main_vis .text-wrap .welcome-txt {
+    display: block;
+    font-size: 55px;
+    font-weight: 600;
+    color: #f9f9f9;
+}
+
+.main_vis .text-wrap p {
+    color: #f9f9f9;
+    margin-top: 15px;
+    padding: 0 180px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.main_vis .text-wrap .btn-more {
+    background: #ff0039;
+    padding: 8px 40px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.on .main_vis .text-wrap .btn-more {
+    color: var(--th_color01);
+}
+
+/* Recomm */
+.wrap {
+    margin-left: 240px;
+}
+
+.recomm {
+    padding: 40px 0;
+}
+
+.recomm .recomm-header {
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.recomm .recomm-header .title {
+    float: left;
+    font-size: 30px;
+}
+
+.recomm .recomm-header .main-btn-more:hover {
+    border-color: #ddd;
+} 
+
+.recomm .recomm-header .main-btn-more:hover i {
+    transform: translateX(2px);
+}
+
+.recomm .recom-slide{
+    padding: 30px 20px;
+}
+
+.recomm .recom-slide .swiper-slide {
+    width: 180px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+
+.recomm .recom-slide .swiper-slide .image-wrap {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.recomm .recom-slide .swiper-slide .image-wrap::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #f9f9f9;
+    z-index: 2;
+}
+
+.recomm .recom-slide .swiper-slide .image-wrap::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #131317;
+}
+
+.recomm .recom-slide .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+.recomm .recom-slide .swiper-slide .music-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.recomm .recom-slide .swiper-slide .music-info .song,
+.recomm .recom-slide .swiper-slide .music-info .singer {
+    display: block;
+}
+
+.recomm .recom-slide .swiper-slide .music-info .song {
+    font-weight: 600;
+}
+
+.recomm .recom-slide .swiper-slide .music-info .singer {
+    color: #ccc;
+    margin-top: 5px;
+}
+
+.recomm .recom-slide .swiper-slide:hover {
+    transform: scale(1.1);
+}
+
+.recomm .recom-slide .swiper-slide:hover img {
+    transform: rotate(360deg);
+}
+
+/* Charts */
+.charts {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.charts .sub-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.charts .sub-title span {
+    color: var(--red);
+}
+
+.charts .popular-area {
+    float: left;
+    width: 49%;
+}
+
+.charts .recom-area {
+    float: right;
+    width: 49%;
+}
+
+.charts ul li {
+    position: relative;
+    border-bottom: 1px solid #26262d;
+    padding: 10px 0;
+    padding-left: 50px;
+}
+
+.on .charts ul li {
+    border-bottom: 1px solid #dfdfdf;
+} 
+
+.charts ul li::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.charts ul li .left-area {
+    float: left;
+}
+
+.charts ul li .left-area .num,
+.charts ul li .left-area .like{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+}
+
+.charts li .like {
+    color: #ff0039;
+}
+
+.charts ul li .left-area .image-wrap {
+    float: left;
+    position: relative;
+}
+
+.charts ul li .left-area .image-wrap a {
+    display: block;
+    height: 100%;
+}
+
+.charts ul li .left-area .image-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.charts ul li .right-area {
+    float: right;
+    width: calc(100% - 120px);
+    padding: 20px;
+}
+
+.charts li .text-wrap .song {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: 15px;
+}
+
+.charts li .text-wrap .singer {
+    display: block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.charts li .info-wrap .time{margin-right: 30px;}
+.charts li .info-wrap .btn-share{margin-right: 10px;}
+
+.charts .show-more {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+/* Cate */
+.cate {
+    padding: 50px 20px;
+}
+
+.cate .title {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.cate ul {
+    overflow: hidden;
+}
+
+.cate ul li {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background: var(--red);
+    padding: 10px 25px;
+    font-size: 15px;
+    transition: 0.5s;
+    border-radius: 20px;
+    color: #f9f9f9;
+}
+
+.cate ul li:hover {
+    color: #1a1919;
+}
+
+/* Music */
+.music {
+    padding: 50px 20px;
+} 
+
+.music .title {
+    font-size: 72px;
+    font-family: 'Kalam', cursive;
+}
+
+.music .recom-header {
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.music .cate-title {
+    float: left;
+    font-size: 25px;
+}
+
+.music .music-slide {
+    margin-bottom: 50px;
+}
+
+.music .music-slide::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.music .music-slide .swiper-slide {
+    float: left;
+    width: 250px;
+    margin-right: 20px;
+}
+
+.music .music-slide .swiper-slide .image-wrap{
+    overflow: hidden;
+    position: relative;
+}
+
+.music .music-slide .swiper-slide .image-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(1.1);
+    transition: 0.5s;
+    border: 5px solid var(--red);
+}
+
+.music .music-slide .swiper-slide:hover .image-wrap::after {
+    transform: scale(1);
+}
+
+.music .music-slide .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.music .music-slide .swiper-slide .image-wrap .btn-play {
+    font-size: 60px;
+}
+
+.music .music-slide .swiper-slide:last-child {
+    margin-right: 0;
+}
+
+.music .music-slide .swiper-slide .text-wrap {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.music .music-slide .swiper-slide .text-wrap .song,
+.music .music-slide .swiper-slide .text-wrap .singer {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    line-height: 1.4;
+}
+
+.music .music-slide .swiper-slide .text-wrap .singer {
+    opacity: 0.6;
+}
+
+/* News */
+.news {
+    padding: 20px 0 50px 20px;
+}
+
+.news .news-header {
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.news .news-header .title {
+    float: left;
+    font-size: 30px;
+}
+
+.on .news .news-slide .swiper-slide .text-wrap .news-heading {
+    color: var(--th_color01);
+}
+
+.news .news-header .sub-info {
+    float: right;
+}
+
+.news .news-header .sub-info a {
+    float: left;
+    margin-right: 10px;
+}
+
+.news .news-slide .swiper-slide {
+    width: 400px;
+    margin-right: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.news .news-slide .swiper-slide a {
+    display: block;
+    height: 100%;
+}
+
+.news .news-slide .swiper-slide:last-child {
+    margin-right: 0;
+}
+
+.news .news-slide .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.news .news-slide .swiper-slide:hover img {
+    transform: scale(1.03);
+}
+
+.news .news-slide .swiper-slide .image-wrap {
+    overflow: hidden;
+}
+
+.news .news-slide .swiper-slide .text-wrap {
+    padding: 20px 20px;
+    background: #1a1919;
+}
+
+.news .news-slide .swiper-slide .text-wrap .news-heading {
+    overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.news .news-slide .swiper-slide .text-wrap .desc {
+    overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* ellipsis line */
+	-webkit-box-orient: vertical;
+    padding-top: 15px;
+    border-top: 1px solid #36363a;
+    color: #ccc;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+/* Blog */
+.blog {
+    padding: 20px;
+}
+
+.blog .title {
+    font-size: 30px;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.blog ul li {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    display: block;
+}
+
+.blog .grid .grid-sizer {
+    padding: 0;
+}
+
+.blog ul li > a {
+    display: block;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog ul li.popular .text-wrap .list-box {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.blog ul li.popular .text-wrap .list-box .image-box {
+    float: left;
+    width: calc((30% - 10px));
+    height: 60px;
+}
+
+.blog ul li.popular .text-wrap .list-box .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog ul li.popular .text-wrap .list-box .text-box {
+    float: right;
+    width: 70%;
+    padding: 10px;
+}
+
+.blog ul li.popular .text-wrap .list-box .text-box h3 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.on .blog ul li.popular .text-wrap .list-box .text-box h3 {
+    color: var(--th_color01);
+}
+
+.blog ul li.popular .text-wrap .list-box .text-box .coments {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.blog ul li.popular .text-wrap .list-box .text-box .coments::after {
+    content: '(19)';
+    color: #ff0039;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.blog ul li.popular .text-wrap .info-wrap .more {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-radius: 30px;
+    background: #ff0039;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.blog ul li .image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog ul li .text-wrap {
+    background: #1a1919;
+    padding: 20px;
+    position: relative;
+}
+
+.blog ul li .text-wrap .profile {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.blog ul li .text-wrap .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog ul li .text-wrap .date {
+    display: block;
+    font-size: 12px;
+    color: #dcdde1;
+    margin-bottom: 10px;
+}
+
+.blog ul li .text-wrap .title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 7px;
+}
+
+.on .blog ul li .text-wrap .title {
+    color: var(--th_color01);
+}
+
+.blog ul li .text-wrap .desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ccc;
+}
+
+.blog ul li .text-wrap .desc span {
+    color: #ff0039;
+    font-weight: 600;
+}
+
+.blog ul li .text-wrap .cate {
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    padding: 5px 7px;
+    background: #000;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.blog ul li .text-wrap .info-wrap {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.blog ul li .text-wrap .info-wrap .download-num {
+    font-size: 13px;
+    float: left;
+}
+
+.on .blog ul li .text-wrap .info-wrap {
+    color: var(--th_color01);
+}
+
+.blog ul li .text-wrap .info-wrap .download-num i {font-size: 13px;}
+
+.blog ul li .text-wrap .info-wrap .comments {
+    float: right;
+    font-size: 13px;
+    font-weight: 300;
+    opacity: 0.3;
+}
+
+.blog ul li .text-wrap .info-wrap .comments::after {
+    content: '(13)';
+    font-size: 13px;
+    color: #ccc;
+}
+
+.blog .btn-wrap {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.blog .btn-load-more {
+    padding: 15px 150px;
+    color: #fff;
+    background: #ff0039;
+    font-size: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.blog .btn-load-more:hover {
+    background: #222;
+}

@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoloMusic</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- XEIcon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Jquery CDN -->
+    <script src="js/jquery-2.2.4.js"></script>
+
+    <!-- Swiper CSS & JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Layout CDN -->
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
+</head>
+<body>
+        <header class="inner">
+            <h1 class="logo">
+                <span class="blind">HoloMusic</span>
+            </h1>
+    
+            <div class="trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <nav>
+                <h3 class="title">Browse Music</h3>
+                <ul class="gnb">
+                    <li class="on"><a href="javascript:;" data-target=".main_vis"><i class="xi-home-o"></i>Home</a></li>
+                    <li><a href="javascript:;" data-target=".recomm"><i class="xi-mouse"></i>Recommendations</a></li>
+                    <li><a href="javascript:;" data-target=".charts"><i class="xi-trending-up"></i> Top Charts</a></li>
+                    <li><a href="javascript:;" data-target=".music"><i class="xi-calendar"></i> New Releases</a></li>
+                    <li><a href="javascript:;" data-target=".news"><i class="xi-radio"></i> News</a></li>
+                    <li><a href="javascript:;" data-target=".blog"><i class="xi-library-books-o"></i> Blog</a></li>
+                </ul>
+    
+                <div class="playlists">
+                    <h3 class="title">Your Playlists</h3>
+                    <button class="btn-make">NEW PLAYLIST</button>
+                </div>
+            </nav>
+        </header>
+    
+        <main>
+            <!-- Main_vis -->
+            <div class="container">
+                <div class="main_vis">
+                    <div class="text-wrap">
+                        <strong class="welcome-txt">
+                            Probably the best<br>Streaming Platform.
+                        </strong>
+                        <p>
+                            Discover, stream, and share a constantly expanding mix of music from <em>emerging</em> and major <em>artists</em> around the world.
+                        </p>
+                        <a href="#" class="btn-more">LEARN MORE</a>
+                    </div>
+                </div>
+    
+    <div class="wrap">
+                    <!-- Recomm -->
+                    <div class="recomm">
+                        <div class="recomm-header">
+                            <h2 class="title">Recommended albums</h2>
+                            <a href="#" class="main-btn-more"><i class="xi-angle-right-thin"></i> See all
+                            </a>
+                        </div>
+        
+                        <div class="swiper-container recom-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album01.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">double take</strong>
+                                            <em class="singer">dhruv</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album02.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">Morning Chillout</strong>
+                                            <em class="singer">Mighty</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album03.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">jazzhip 7</strong>
+                                            <em class="singer">soo</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album04.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">GLTCHED LOVE</strong>
+                                            <em class="singer">Blanc de Noir</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album05.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">Best Of MrRevillz</strong>
+                                            <em class="singer">Ilyana Azman</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album06.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">Summer 2k17</strong>
+                                            <em class="singer">lilly manning</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album07.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">T-4 Techno</strong>
+                                            <em class="singer">Westcoast Radio (EDM)</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album08.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">Summer Nights</strong>
+                                            <em class="singer">Serene</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album09.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">good night</strong>
+                                            <em class="singer">Rina May Hilburn</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album10.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">Late Night Lofi</strong>
+                                            <em class="singer">llyana Azman</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album11.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">OHAYO MY NIGHT</strong>
+                                            <em class="singer">D-Hack</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album12.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">NDA</strong>
+                                            <em class="singer">Billie Eilish</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album13.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">Go Away</strong>
+                                            <em class="singer">Omar Apollo</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album14.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">WHAT WOULD YOU DO?</strong>
+                                            <em class="singer">HONNE</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/album15.jpeg" alt="album">
+                                        </div>
+                                        <div class="music-info">
+                                            <strong class="song">Paris</strong>
+                                            <em class="singer">Andrekza</em>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+        
+                    <!-- Charts -->
+                    <div class="charts">
+                        <h2 class="blind">Music charts</h2>
+                        <div class="popular-area">
+                            <h3 class="sub-title">Most <span>Popular</span> This Week</h3>
+                            <ul>
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">01</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart01.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">Butter</strong>
+                                                <em class="singer">방탄소년단 (BTS)</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:10</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">02</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart02.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">Next Level</strong>
+                                                <em class="singer">aespa (에스파)</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:42</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="like"><i class="xi-heart"></i></span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart03.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">헤픈 우연(HAPPEN)</strong>
+                                                <em class="singer">헤이즈</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:13</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">04</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart04.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">Dun Dun Dance</strong>
+                                                <em class="singer">오마이걸</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:40</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">05</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart05.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                        <div class="text-wrap">
+                                            <strong class="song">Peaches (feat. Ludacris, Usher & Snoop Dogg)</strong>
+                                            <em class="singer">Justin Bieber (저스틴 비버)</em>
+                                        </div>
+                                        <div class="info-wrap">
+                                            <span class="time">03:30</span>
+                                            <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                            <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                        </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="show-more">SHOW MORE <i class="xi-angle-down-min"></i></a>
+                        </div>
+        
+                        <div class="recom-area">
+                            <h3 class="sub-title">Most <span>Recommended</span></h3>
+                            <ul>
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">01</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart01.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">Butter</strong>
+                                                <em class="singer">방탄소년단 (BTS)</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:10</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">02</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart02.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">Next Level</strong>
+                                                <em class="singer">aespa (에스파)</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:42</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">03</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart03.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">헤픈 우연(HAPPEN)</strong>
+                                                <em class="singer">헤이즈</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:13</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">04</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart04.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">Dun Dun Dance</strong>
+                                                <em class="singer">오마이걸</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:40</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="left-area">
+                                        <span class="num">05</span>
+                                        <div class="image-wrap">
+                                            <a href="#"><img src="images/chart05.jpeg" alt="album"></a>
+                                            <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="right-area">
+                                        <a href="#">
+                                            <div class="text-wrap">
+                                                <strong class="song">Peaches (feat. Ludacris, Usher & Snoop Dogg)</strong>
+                                                <em class="singer">Justin Bieber (저스틴 비버)</em>
+                                            </div>
+                                            <div class="info-wrap">
+                                                <span class="time">03:30</span>
+                                                <span class="btn-share"><i class="xi-share-alt-o"><span class="blind">공유하기</span></i></span>
+                                                <span class="btn-more"><i class="xi-ellipsis-h"><span class="blind">더보기</span></i></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="show-more">SHOW MORE <i class="xi-angle-down-min"></i></a>
+                        </div>
+                    </div>
+        
+                    <!-- Cate -->
+                    <div class="cate">
+                        <h2 class="title">Cate</h2>
+                        <ul>
+                            <li><a href="#">Blues</a></li>
+                            <li><a href="#">Classical</a></li>
+                            <li><a href="#">Country</a></li>
+                            <li><a href="#">Dance</a></li>
+                            <li><a href="#">Electronic</a></li>
+                            <li><a href="#">Hip-Hop</a></li>
+                            <li><a href="#">Jazz</a></li>
+                            <li><a href="#">Latin</a></li>
+                            <li><a href="#">Metal</a></li>
+                            <li><a href="#">Party</a></li>
+                            <li><a href="#">R&B / Soul</a></li>
+                            <li><a href="#">Reggae / Dancehall</a></li>
+                            <li><a href="#">Soundtracks</a></li>
+                            <li><a href="#">World</a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- music -->
+                    <div class="music">
+                        <h2 class="title">Music</h2>
+                        
+                        <div class="dance">
+                            <div class="recom-header">
+                                <h3 class="cate-title">Pop</h3>
+                                <a href="#" class="main-btn-more"><i class="xi-angle-right-thin"></i> See all
+                                </a>
+                            </div>
+        
+                            <div class="swiper-container music-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/pop01.jpeg" alt="pop-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">working</strong>
+                                                <em class="singer">Tate McRac, Khalid</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/pop02.jpeg" alt="pop-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Shade of yellow</strong>
+                                                <em class="singer">Gniff</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/pop03.jpeg" alt="pop-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Not Sad Anymore</strong>
+                                                <em class="singer">Clara Mae</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/pop04.jpeg" alt="pop-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Southern Curiosity</strong>
+                                                <em class="singer">Who is Fancy</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/pop05.jpeg" alt="pop-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">How Not To Drown</strong>
+                                                <em class="singer">CHVRCHES, Robert Smith</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/pop06.jpeg" alt="pop-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Jubilee</strong>
+                                                <em class="singer">Japanese Breakfast (재패니즈 브렉퍼스트)</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="Electronic">
+                            <div class="recom-header">
+                                <h3 class="cate-title">R&B/Soul</h3>
+                                <a href="#" class="main-btn-more"><i class="xi-angle-right-thin"></i> See all
+                                </a>
+                            </div>
+                            <div class="swiper-container music-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Elect01.jpeg" alt="elect-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Back of My Mind</strong>
+                                                <em class="singer">H.E.R.</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Elect02.jpeg" alt="elect-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">TAPE 2/FOMALHAUT</strong>
+                                                <em class="singer">BERWYN</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Elect03.jpeg" alt="elect-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Midnight Charm</strong>
+                                                <em class="singer">Jenevieve</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Elect04.jpeg" alt="elect-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">time machine</strong>
+                                                <em class="singer">Foushee</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Elect05.jpeg" alt="elect-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">My City</strong>
+                                                <em class="singer">Elhae, Masego</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Elect06.jpeg" alt="elect-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Waves of Blue</strong>
+                                                <em class="singer">Majid Jordan</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="Hip-Hop">
+                            <div class="recom-header">
+                                <h3 class="cate-title">Hip-Hop</h3>
+                                <a href="#" class="main-btn-more"><i class="xi-angle-right-thin"></i> See all
+                                </a>
+                            </div>
+        
+                            <div class="swiper-container music-slide">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Hip01.jpeg" alt="hip-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Intro</strong>
+                                                <em class="singer">Logic</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Hip02.jpeg" alt="hip-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">LUMBERJACK</strong>
+                                                <em class="singer">Tyler, The Creator</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Hip03.jpeg" alt="hip-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Thot Shit</strong>
+                                                <em class="singer">Megan Thee Stallion</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Hip04.jpeg" alt="hip-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">oOo that's my type</strong>
+                                                <em class="singer">Marian Hill, Yung Baby Tate</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Hip05.jpeg" alt="hip-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Good News</strong>
+                                                <em class="singer">DARKMINDS</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <div class="image-wrap">
+                                                <img src="images/Hip06.jpeg" alt="hip-album">
+                                                <span class="btn-play"><i class="xi-play-circle"></i><span class="blind">재생</span></span>
+                                            </div>
+                                            <div class="text-wrap">
+                                                <strong class="song">Too Bizarre</strong>
+                                                <em class="singer">Sknillex, Swae Lee, Siiickbrain</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- News -->
+                    <div class="news">
+                        <div class="news-header">
+                            <h2 class="title">News</h2>
+                            <div class="sub-info">
+                                <a href="#">Sort By Release Date <i class="xi-caret-down-min"></i></a>
+                                <a href="#"><i class="xi-view-module"><span class="blind">간략하게보기</span></i></a>
+                                <a href="#"><i class="xi-view-list"><span class="blind">리스트로보기</span></i></a>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-container news-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/News01.jpeg" alt="news-img">
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h3 class="news-heading">
+                                                Bloom Twins And Jan Blomqvist Release First-Ever Collab: ‘High On Beat’
+                                            </h3>
+                                            <p class="desc">
+                                                June 4, 2021 – After releasing ‘DayDream’ alongside Benny Benassi earlier this year, Ukraine-born, London-based pair Bloom Twins are cranking it up a notch with their first-ever release on leading dance music label Armada Music. A creative get-together with Berlin’s Jan Blomqvist, ‘High On Beat’ brings with it a hypnotic sound blend that takes center stage in both the track itself and the accompanying music video.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/News02.jpeg" alt="news-img">
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h3 class="news-heading">
+                                                Armin Van Buuren Releases Brand-New Mix Album: ‘A State Of Trance 2021’
+                                            </h3>
+                                            <p class="desc">
+                                                May 28, 2021 – After reaching the milestone number of a thousand episodes with his A State Of Trance radio show, hosting a seven-day countdown stream to reveal the fan-voted ASOT Top 1000 of all time and even releasing a ‘A State Of Trance 1000 – Celebration Mix’ album, Armin van Buuren still isn’t done magnifying an already monumental year in A State Of Trance history. Today, the five-time #1 DJ in the world launched the highly-anticipated eighteenth installment in his A State Of Trance mix album series: ‘A State Of Trance 2021’.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/News03.jpeg" alt="news-img">
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h3 class="news-heading">
+                                                Dragonette, Sunnery James & Ryan Marciano, Cat Dealers And Bruno Martini Unleash Big Summer Anthem: ‘Summer Thing’
+                                            </h3>
+                                            <p class="desc">
+                                                March 12, 2021 – Any of the names tied to this sizzling single has the ability to send the global crowd into a frenzy, let alone when all four put their names on a single record. ‘Summer Thing’ brings Dragonette, Sunnery James & Ryan Marciano, Cat Dealers and Bruno Martini together on one phenomenal summer anthem, and it’s every bit as special as the magnitude of this line-up suggests.
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <div class="image-wrap">
+                                            <img src="images/News04.jpeg" alt="news-img">
+                                        </div>
+                                        <div class="text-wrap">
+                                            <h3 class="news-heading">
+                                                Twenty Trance Classics From Armin van Buuren That Can’t Be Forgotten
+                                            </h3>
+                                            <p class="desc">
+                                                Few artists have made as colossal an impact on the global Trance scene as Armin van Buuren has. While recent years show he’s not afraid to switch things around and occasionally experiment with different sounds, he has never strayed too far from his roots, creating well over a hundred timeless Trance records. So to pay tribute to the five-time #1 DJ in the world and arrange for a delightful trip down memory lane, we decided to list twenty Trance classics from Armin van Buuren that can’t be forgotten, including a few you may have never heard before!
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog -->
+                    <div class="blog">
+                        <h2 class="title">Blog</h2>
+                        <ul class="clear grid">
+                            <li class="grid-sizer"></li>
+                            <li class="grid-item">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog01.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="profile">
+                                            <img src="images/profile.jpeg" alt="profile">
+                                        </span>
+                                        <span class="date">Jun 24th 2017</span>
+                                        <h3 class="title">
+                                            Profile verification has arrived				
+                                        </h3>
+                                        <p class="desc">
+                                            Big news: SoundCloud is rolling out profile verification. Official blue checkmarks will now show up in search and on profiles […]
+                                        </p>
+                                        <span class="cate">MUSIC</span>
+        
+                                        <div class="info-wrap">
+                                            <span class="download-num"><i class="xi-arrow-up"></i> 725</span>
+                                            <span class="comments">
+                                            comments
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+        
+                            <li class="grid-item">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog02.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="profile">
+                                            <img src="images/profile02.jpeg" alt="profile">
+                                        </span>
+                                        <span class="date">Jun 24th 2017</span>
+                                        <h3 class="title">Voting for the first time? We’ve got you</h3>
+                                        <span class="cate">Music</span>
+        
+                                        <div class="info-wrap">
+                                            <span class="download-num"><i class="xi-arrow-up"></i> 325</span>
+                                            <span class="comments">
+                                            comments
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+        
+                            <li class="grid-item">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog03.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="date">Jun 24th 2017</span>
+                                        <h3 class="title">Sharing the music you love just got easier</h3>
+                                            <p class="desc">
+                                                by <span>Author Name</span>
+                                            </p>
+                                        <span class="cate">Music</span>
+        
+                                        <div class="info-wrap">
+                                            <span class="download-num"><i class="xi-arrow-up"></i> 25</span>
+                                            <span class="comments">
+                                            comments
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="grid-item popular">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog05.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="list-box">
+                                            <div class="image-box">
+                                                <img src="images/sub01.jpeg" alt="sub-img">
+                                            </div>
+                                            <div class="text-box">
+                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <span class="coments">coments</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="list-box">
+                                            <div class="image-box">
+                                                <img src="images/sub02.jpeg" alt="sub-img">
+                                            </div>
+                                            <div class="text-box">
+                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <span class="coments">coments</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="list-box">
+                                            <div class="image-box">
+                                                <img src="images/sub03.jpeg" alt="sub-img">
+                                            </div>
+                                            <div class="text-box">
+                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <span class="coments">coments</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="list-box">
+                                            <div class="image-box">
+                                                <img src="images/sub04.jpeg" alt="sub-img">
+                                            </div>
+                                            <div class="text-box">
+                                                <h3>Lorem ipsum dolor sit amet.</h3>
+                                                <span class="coments">coments</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="info-wrap">
+                                            <button class="more">MORE</button>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+        
+                            <li class="grid-item">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog04.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="profile">
+                                            <img src="images/profile03.jpeg" alt="profile">
+                                        </span>
+                                        <span class="date">Jun 24th 2017</span>
+                                        <h3 class="title">Meet August’s Artists and DJs to Watch</h3>
+                                        <span class="cate">Music</span>
+        
+                                        <div class="info-wrap">
+                                            <span class="download-num"><i class="xi-arrow-up"></i> 625</span>
+                                            <span class="comments">
+                                            comments
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+        
+                            <li class="grid-item">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog06.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="date">Jun 24th 2017</span>
+                                        <h3 class="title">
+                                            “First on SoundCloud” artist Cuppy is the “Princess of Afrobeats”
+                                        </h3>
+                                        <span class="cate">Music</span>
+        
+                                        <div class="info-wrap">
+                                            <span class="download-num"><i class="xi-arrow-up"></i> 155</span>
+                                            <span class="comments">
+                                            comments
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+        
+                            <li class="grid-item">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog07.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="date">Jun 24th 2017</span>
+                                        <h3 class="title">
+                                            Meet July’s Artists and DJs to Watch
+                                        </h3>
+                                        <p class="desc">
+                                            by <span>Author Name</span>
+                                        </p>
+                                        <span class="cate">Music</span>
+        
+                                        <div class="info-wrap">
+                                            <span class="download-num"><i class="xi-arrow-up"></i> 704</span>
+                                            <span class="comments">
+                                            comments
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+        
+                            <li class="grid-item">
+                                <a href="#">
+                                    <div class="image-wrap">
+                                        <img src="images/blog08.jpeg" alt="blog-img">
+                                    </div>
+                                    <div class="text-wrap">
+                                        <span class="profile">
+                                            <img src="images/profile04.jpeg" alt="profile">
+                                        </span>
+                                        <span class="date">Jun 24th 2017</span>
+                                        <h3 class="title">
+                                            How “First on SoundCloud” artist object blue’s niche sound built a global following
+                                        </h3>
+                                        <span class="cate">Music</span>
+        
+                                        <div class="info-wrap">
+                                            <span class="download-num"><i class="xi-arrow-up"></i> 14</span>
+                                            <span class="comments">
+                                            comments
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+        
+                            <li class="grid-item">
+                                <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/blog09.jpeg" alt="blog-img">
+                                </div>
+                                <div class="text-wrap">
+                                    <span class="date">Jun 24th 2017</span>
+                                    <h3 class="title">
+                                        Meet June’s Artists and DJs to Watch
+                                    </h3>
+                                    <p class="desc">
+                                        by <span>Author Name</span>
+                                    </p>
+                                    <span class="cate">Music</span>
+        
+                                    <div class="info-wrap">
+                                        <span class="download-num"><i class="xi-arrow-up"></i> 59</span>
+                                        <span class="comments">
+                                        comments
+                                        </span>
+                                    </div>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn-load-more">LOAD MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+            <!-- Footer -->
+            <footer>
+                <div class="menu-wrap">
+                    <div class="category">
+                        <h3 class="title">
+                            Categories
+                        </h3>
+                        <ul>
+                            <li><a href="#">Music</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Concerts</a></li>
+                            <li><a href="#">Previews</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <h3 class="title">
+                            About
+                        </h3>
+                        <ul>
+                            <li><a href="#">Lorem</a></li>
+                            <li><a href="#">Tera and Coronons</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="newsletter-wrap">
+                    <h3 class="title">
+                        Newsletter
+                    </h3>
+                    <p class="desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestias iste odio dolore repellendus, atque maxime nemo quia blanditiis dolorem!
+                    </p>
+        
+                    <div class="submit">
+                        <form action="" id="emailletter">
+                            <fieldset>
+                                <legend class="blind">newsletter</legend>
+                                    <input type="text" placeholder="Your e-mail address" id="txt">
+                                    <button type="submit" class="btn-submit">SUBMIT</button> 
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div class="check">
+                        <input type="checkbox" id="check">
+                        <label for="check">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label>
+                    </div>
+                </div>
+            </footer>
+        <div class="theme-btn">
+            <i class="fi-rr-opacity"></i>
+            <span>White theme</span>
+        </div>
+</body>
+</html>
