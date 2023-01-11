@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunglasses shoppingmall</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- XEIcon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!-- Jquery CDN -->
+    <script src="js/jquery-2.2.4.js"></script>
+
+    <!-- Swiper CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+    <!-- Magic Scroll CSS & JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/custom.js"></script>
+</head>
+<body>
+    <header>
+        <div class="inner clear">
+            <div class="left-area">
+                <h1 class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a>
+                </h1>
+
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="javascript:;" data-target=".collection">collection</a></li>
+                        <li><a href="javascript:;" data-target=".product">sunglasses</a></li>
+                        <li><a href="javascript:;" data-target=".top-seller">top sellers</a></li>
+                        <li><a href="javascript:;" data-target=".magazine">magazine</a></li>
+                        <li><a href="javascript:;" data-target=".overlay">summer 2020</a></li>
+                        <li><a href="javascript:;" data-target=".from-author">author</a></li>
+                        <li><a href="javascript:;" data-target=".brand">brand</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="right-area">
+                <a href="#" class="cart">CART <span>(0)</span></a>
+
+                <a href="#" class="search">
+                    <span class="blind">검색</span>
+                </a>
+
+                <div class="menu">
+                    <span class="blind">메뉴</span>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile_menu">
+            <div class="close-btn">
+                <i></i>
+                <i></i>
+            </div>
+            <ul>
+                <li><a href="javascript:;" data-target=".collection">collection</a></li>
+                <li><a href="javascript:;" data-target=".product">sunglasses</a></li>
+                <li><a href="javascript:;" data-target=".top-seller">top sellers</a></li>
+                <li><a href="javascript:;" data-target=".magazine">magazine</a></li>
+                <li><a href="javascript:;" data-target=".overlay">summer 2020</a></li>
+                <li><a href="javascript:;" data-target=".from-author">author</a></li>
+                <li><a href="javascript:;" data-target=".brand">brand</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main_vis section -->
+            <div class="main_vis">
+                <img src="images/14.jpeg" alt="">
+                <div class="text-wrap">
+                    <em class="cate">OPTICAL FRAMES</em>
+                    <strong class="title">
+                        <span>The Spring Summer 2020</span>
+                        <span>collection <em>available now</em></span>
+                    </strong>
+
+                    <a href="#" class="btn-more">Brown Collection <i class="xi-long-arrow-right"></i></a>
+                </div>
+            </div>
+
+        <!-- Collection Section -->
+            <div class="collection">
+                <div class="inner">
+                    <h2 class="title">COLLECTION</h2>
+
+                    <div class="cate-box">
+                        <div class="cate-items">
+                            <a href="#" data-count="(25)">Timeless Icons</a>
+                            <a href="#" data-count="(40)">Style Pioneer</a>
+                            <a href="#" data-count="(18)">Motorcycle</a>
+                        </div>
+
+                        <div class="cate-items">
+                            <a href="#" data-count="(25)">Heritage</a>
+                            <a href="#" data-count="(55)">Voyager</a>
+                            <a href="#" data-count="(15)">Special Lenses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Product Section -->
+        <div class="product inner">
+            <ul class="products clear">
+                <li class="product prd01">
+                    <a href="#">
+                        <img src="images/sun01.png" alt="">
+                        <span class="model">DB 1001</span>
+                        <div class="text-wrap">
+                            <p>DB 1001/s - Gold - Green Shaded</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="product prd02">
+                    <a href="#">
+                        <img src="images/sun02.png" alt="">
+                        <span class="model">DB 1002</span>
+                        <div class="text-wrap">
+                            <p>DB 1001/s - Gold - Green Shaded</p>
+                            <p class="desc">
+                                During the inception of a project, <br> in advance of
+                                creation, <br> the workshop managers discover the
+                                gowache
+                            </p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="product prd03">
+                    <a href="#">
+                        <img src="images/sun03.jpeg" alt="">
+                        <span class="model">DB 1006</span>
+                        <div class="text-wrap">
+                            <p>DB 1001/s - Gold - Green Shaded</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="product prd04">
+                    <a href="#">
+                        <img src="images/side.jpg" alt="">
+                        <div class="text-wrap">
+                            <p>DB 1001/s - Gold - Green Shaded</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="product prd05">
+                    <a href="#">
+                        <img src="images/sun05.png" alt="">
+                        <span class="model">DB 1007</span>
+                        <div class="text-wrap">
+                            <p>DB 1001/s - Gold - Green Shaded</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="product prd06">
+                    <a href="#">
+                        <img src="images/sun06.png_size_mode_5" alt="">
+                        <span class="model">DB 1009</span>
+                        <div class="text-wrap">
+                            <p>DB 1001/s - Gold - Green Shaded</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Top seller section -->
+        <div class="top-seller">
+                <div class="seller-header">
+                    <div class="inner">
+                        <em class="cate">EYEWEAR</em>
+                        <h2 class="title">Top Sellers</h2>
+                    </div>
+                </div>
+
+                <div class="swiper-container seller-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/sunslide01.png" alt="">
+                                </div>
+                                <span class="model">DB 1001/s - Gold - Green Shaded</span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/sunslide02.png" alt="">
+                                </div>
+                                <span class="model">DB 1001/s - Gold - Green Shaded</span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/sunslide03.png" alt="">
+                                </div>
+                                <span class="model">DB 1001/s - Gold - Green Shaded</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn prev"><i class="xi-arrow-left"><span class="blind">이전</span></i></a>
+                    <a href="#" class="btn next"><i class="xi-arrow-right"><span class="blind">이전</span></i></a>
+                </div>
+        </div>
+
+        <!-- Magazine section -->
+        <div class="magazine">
+            <div class="inner">
+                <div class="magazine-header">
+                    <em class="cate">EYEWEAR</em>
+                    <h2 class="title">Weekly Magazine</h2>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="btn next">
+                    <i class="xi-arrow-right"><span class="blind">이전</span></i>
+                </div>
+                <div class="btn prev">
+                    <i class="xi-arrow-left"><span class="blind">이전</span></i>
+                </div>
+
+                <div class="swiper-container magazine-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/slide01.webp" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <p>
+                                        This is a challenge worthy of the louse, <br>
+                                        which, in this way
+                                    </p>
+
+                                    <div class="sub-text-box">
+                                        <span class="date">14 August, 2020</span>
+                                        <span class="desc">
+                                            Sunglasses, Paris Fashion <br>
+                                            Week 2020, Summer
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide center">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/slide03.jpg" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <p>
+                                        During the inception of a project, in advance <br>
+                                        of creation, the workshop managers <br>
+                                        discover the gouache
+                                    </p>
+
+                                    <div class="sub-text-box">
+                                        <span class="date">14 August, 2020</span>
+                                        <span class="desc">
+                                            Sunglasses, Paris Fashion <br>
+                                            Week 2020, Summer
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/slide02.webp" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <p>
+                                        Our rock-solid responsiveness is held dear <br>
+                                        by the I House.
+                                    </p>
+
+                                    <div class="sub-text-box">
+                                        <span class="date">14 August, 2020</span>
+                                        <span class="desc">
+                                            Sunglasses, Paris Fashion <br>
+                                            Week 2020, Summer
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/slide01.webp" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <p>
+                                        This is a challenge worthy of the louse, <br>
+                                        which, in this way
+                                    </p>
+
+                                    <div class="sub-text-box">
+                                        <span class="date">14 August, 2020</span>
+                                        <span class="desc">
+                                            Sunglasses, Paris Fashion <br>
+                                            Week 2020, Summer
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide center">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/slide03.jpg" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <p>
+                                        During the inception of a project, in advance <br>
+                                        of creation, the workshop managers <br>
+                                        discover the gouache
+                                    </p>
+
+                                    <div class="sub-text-box">
+                                        <span class="date">14 August, 2020</span>
+                                        <span class="desc">
+                                            Sunglasses, Paris Fashion <br>
+                                            Week 2020, Summer
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="image-wrap">
+                                    <img src="images/slide02.webp" alt="">
+                                </div>
+                                <div class="text-wrap">
+                                    <p>
+                                        This is a challenge worthy of the louse, <br>
+                                        which, in this way
+                                    </p>
+
+                                    <div class="sub-text-box">
+                                        <span class="date">14 August, 2020</span>
+                                        <span class="desc">
+                                            Sunglasses, Paris Fashion
+                                            Week 2020, Summer
+                                        </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- Overlay slide section -->
+            <div class="overlay">
+                <span class="drag-box">DRAG</span>
+                <div class="overlay-header clear">
+                    <em class="cate">COLLECTION</em>
+                    <em class="sub-cate"><span>OpticalFrames / </span>  Sunglasses</em>
+                </div>
+
+                <strong class="title">
+                    <span>The Spring Summer 2020</span>
+                    <span>frames <em>available now</em></span>
+                </strong>
+
+                <div class="swiper-container overlay-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/overlayslide01.jpeg" alt="">
+                            <span class="model">DB 1001/S - Red Hawara</span>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="images/overlayslide02.jpeg" alt="">
+                            <span class="model">DB 1001/S - Red Hawara</span>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="images/overlayslide03.jpeg" alt="">
+                            <span class="model">DB 1001/S - Red Hawara</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- From author section -->
+            <div class="from-author">
+                <div class="author-content clear">
+                    <div class="image-wrap">
+                        <!-- <img src="images/pointimg.png" alt="" data-aos-duration="500" data-aos-delay="1500" data-aos="fade-up"> -->
+                        <span class="model">DB 1000/s - Red Hawara</span>
+                    </div>
+
+                    <div class="text-wrap">
+                        <div class="text-header">
+                            <em class="cate">FROM AUTHOR</em>
+                            <span class="author">- Lorem ipsum</span>
+                        </div>
+                        <p>
+                            <span class="txt_ani01">"A collection of iconic sunglasses </span><br>
+                            <span class="txt_ani02">and optical frames featuring </span><br>
+                            <span class="txt_ani03">retro-influenceed <em>design and</em></span><br>
+                            <span class="txt_ani04"><em>offering timeless style."</em></span>
+                        </p>
+                        <a href="#" class="btn-more">About the Brand <i class="xi-long-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo view section -->
+            <div class="photo-view">
+                <!-- <span class="point-font">#DBEyewear</span> -->
+                    <ul class="items items01">
+                        <li class="item">
+                            <a href="#"><img src="images/photo01.jpeg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo02.jpeg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"> <img src="images/photo03.jpg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo01.jpeg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo02.jpeg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"> <img src="images/photo03.jpg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo01.jpeg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo02.jpeg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"> <img src="images/photo03.jpg" alt=""></a>
+                        </li>
+                    </ul>
+
+                    <ul class="items items02">
+                        <li class="item">
+                            <a href="#"><img src="images/photo04.jpg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <img src="images/slideshow.jpeg" alt="">
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo05.jpg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo04.jpg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <img src="images/slideshow.jpeg" alt="">
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo05.jpg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo04.jpg" alt=""></a>
+                        </li>
+
+                        <li class="item">
+                            <img src="images/slideshow.jpeg" alt="">
+                        </li>
+
+                        <li class="item">
+                            <a href="#"><img src="images/photo05.jpg" alt=""></a>
+                        </li>
+                    </ul>
+            </div>
+
+            <!-- Brand section -->
+            <div class="brand">
+                <div class="text-wrap">
+                    <div class="text-header">
+                        <em class="cate">THE BRAND</em>
+                    </div>
+                    <p>
+                        "A collection of iconic sunglasses <br>
+                        and optical frames featuring <br>
+                        retro-influenceed <em>design and offering <br>
+                        timeless style."</em>
+                    </p>
+                    <a href="#" class="btn-more">About the Brand <i class="xi-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="subscribe-box">
+                <strong class="inform">
+                    Sign up to join the world of <br>
+                    Eyewear by David Beeckham
+                </strong>
+
+                <a href="#" class="btn-sub">Subscribe <i class="xi-long-arrow-right"></i></a>
+
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos ipsum sunt!
+                </p>
+            </div>
+
+            <h3 class="logo">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+            </h3>
+
+            <div class="gnb-box">
+                <ul>
+                    <li><a href="#">sunglasses</a></li>
+                    <li><a href="#">brand</a></li>
+                    <li><a href="#">where to buy</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">optical frames</a></li>
+                    <li><a href="#">craft</a></li>
+                    <li><a href="#">magazine</a></li>
+                </ul>
+
+                <div class="sns-box clear">
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="inner">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Cookies Policy</a></li>
+                </ul>
+            </div>
+        </div>    
+    </footer>
+
+    <!-- Arrow up button -->
+    <button type="button" class="arrow-up">
+        TOP
+    </button>
+</body>
+</html>

@@ -1,0 +1,246 @@
+body {
+    font-family: 'Poppins', 'Noto Sans KR';
+    min-width: 1400px;
+    padding-top: 60px;
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	background: #fff;
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+header .inner {
+    height: 60px;
+}
+
+header .left-area {
+    float: left;
+    position: relative;
+}
+
+header .left-area .logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 20px;
+}
+
+header .left-area .logo a {
+    display: block;
+    height: 100%;
+}
+
+header .left-area .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .left-area .gnb {
+    overflow: hidden;
+    float: left;
+    margin: 20px 0 20px 150px;
+}
+
+header .left-area .gnb li {
+    float: left;
+    line-height: 20px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header .left-area .gnb li:hover {
+    text-decoration: underline;
+}
+
+header .right-area {
+    float: right;
+    position: relative;
+}
+
+header .right-area .cart {
+    display: block;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 100px;
+    text-align: center;
+    border-left: 1px solid #222;
+    border-right: 1px solid #222;
+}
+
+header .right-area .search {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: url(../images/search.png) no-repeat;
+    background-position: center;
+    background-size: 32px;
+}
+
+header .right-area .menu {
+    display: none;
+    float: right;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    padding: 40px 0;
+    background: rgb(253, 250, 238);
+}
+
+footer .inner::after {
+    content: '';
+    display: block;
+    clear: both;
+} 
+
+footer .subscribe-box {
+    float: left;
+    width: 350px;
+}
+
+footer .subscribe-box .inform {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+footer .subscribe-box .btn-sub {
+    position: relative;
+    display: block;
+    text-align: right;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #222;
+}
+
+footer .subscribe-box .btn-sub i {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+footer .subscribe-box .btn-sub:hover i {
+    right: -30px;
+}
+
+footer .subscribe-box p {
+    margin-top: 20px;
+}
+
+footer .logo {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 20px;
+}
+
+footer .logo a {
+    display: block;
+    height: 100%;
+}
+
+footer .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .gnb-box {
+    float: right;
+    overflow: hidden;
+}
+
+footer .gnb-box ul {
+    float: left;
+    margin-right: 35px;
+}
+
+footer .gnb-box ul:nth-child(2),
+footer .sns-box ul:nth-child(2) {
+    margin-right: 0;
+}
+
+footer .gnb-box ul li {
+    line-height: 30px;
+    font-weight: 500;
+}
+
+footer .sns-box ul {
+    margin-top: 20px;
+    margin-right: 55px;
+}
+
+footer .sns-box ul li {
+    font-size: 13px;
+    font-weight: normal;
+    color: #948e8e;
+}
+
+footer .copyright ul {
+    overflow: hidden;
+}
+
+footer .copyright ul li {
+    float: left;
+    margin-right: 20px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #948e8e;
+}
+
+footer .gnb-box ul li:hover,
+footer .sns-box ul li:hover,
+footer .copyright ul li:hover {
+    text-decoration: underline;
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.arrow-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.5s;
+    opacity: 0;
+    pointer-events: none;
+    border: none;
+    z-index: 100;
+}  
+
+.arrow-up.on {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
