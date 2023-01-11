@@ -1,0 +1,11 @@
+//mixin
+@mixin only-tablet {
+    @media (min-width: #{$mobileMaxWidth}) and (max-width:#{$tabletMaxWidth}) {
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media all and (max-width:#{$mobileMaxWidth}) {
+      @content;
+    }
+  }
