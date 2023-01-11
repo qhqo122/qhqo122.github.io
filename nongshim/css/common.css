@@ -1,0 +1,32 @@
+.inner {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
+
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn_more {
+    padding: 13px 37px 11px;
+    border-radius: 20px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+
