@@ -269,6 +269,14 @@ body {
 .footer {
     padding: 40rem;
     background: #fafafa;
+    
+    @include only-tablet {
+        padding: 24rem;
+    }
+    
+    @include mobile {
+        padding: 15rem;
+    }
 
     &--desc {
         font-size: 18rem;
