@@ -101,7 +101,7 @@ body {
 
 @media all and (max-width: 768px) {
   .sec-kv {
-    padding: 15rem;
+    padding: 15rem 15rem 120rem 15rem;
   }
 }
 
@@ -455,6 +455,18 @@ body {
 .footer .footer-menu--item {
   font-size: 24rem;
   font-weight: 400;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .footer-menu--item  {
+    font-size: 18rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .footer .footer-menu--item  {
+    font-size: 12rem;
+  }
 }
 
 .footer .footer-menu--item.blog {
