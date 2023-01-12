@@ -438,6 +438,18 @@ body {
   background: #fafafa;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    padding: 24rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    padding: 15rem;
+  }
+}
+
 .footer--desc {
   font-size: 18rem;
   line-height: 1.3;
