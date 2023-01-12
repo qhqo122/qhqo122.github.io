@@ -282,6 +282,14 @@ body {
         &--item {
             font-size: 24rem;
             font-weight: 400;
+            
+            @include only-tablet {
+                font-size: 18rem;
+            }
+
+            @include mobile {
+                font-size: 14rem;
+            }
 
             &.blog {
                 font-weight: 600;
